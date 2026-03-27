@@ -1,10 +1,28 @@
 package br.com.fiapride.model;
 
-// A Classe define a estrutura. Ela não é o passageiro real, é apenas o modelo.
 public class Passageiro {
-    // Atributos (Características)
-    public String nome;
-    public double saldo; 
-    // Nota: Por enquanto usamos 'public' para facilitar o aprendizado.
-    // Nas próximas aulas, aprenderemos a proteger esses dados.
+
+    private String nome;
+    private double saldo;
+
+    public Passageiro(String nome, double saldo) {
+        this.nome = nome;
+        this.saldo = saldo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
